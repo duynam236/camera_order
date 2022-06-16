@@ -1,0 +1,70 @@
+table, td {
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.th {
+    font-weight: 900;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    position: relative;
+    padding-left: 10px;
+}
+
+.position {
+    position: absolute;
+    top: 25px;
+}
+
+td img {
+    width: 80px;
+    height: auto;
+}
+
+.value1, .value2, .value3 {
+    width: 60px;
+    height: 29px;
+    color: rgb(187, 187, 187);
+    border: 1px solid rgb(187, 187, 187);
+    padding-left: 5px;
+    padding-top: 9px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    height: 65px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.button {
+    width: 60px;
+    height: 40px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.minus {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.multiply {
+    color: white;
+    background-color: rgb(196, 30, 30);
+    border: rgb(196, 30, 30);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    visibility:hidden;
+}
+
+i {
+    font-size: 17px;
+    
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Order/order.css">
+    <script src="/Order/order.js" defer></script>
+</head>
+
+<body>
+    <table id="displayTable">
+        <colgroup>
+            <col width="100px">
+            <col width="300px" span="2">
+            <col width="100px">
+            <col width="120px">
+            <col width="80px">
+            <col width="100px">
+        </colgroup>
+        <tr class="th" style="height: 50px;">
+            <td>Product</td>
+            <td>Description</td>
+            <td>Quantity/Update</td>
+            <td>Price</td>
+            <td>Discount</td>
+            <td>Tax</td>
+            <td>Total</td>
+        </tr>
+        <tr style="height: 100px;" id="product1">
+            <td>
+                <img src="/Order/image/img1.jpg">
+            </td>
+            <td>
+                <p>MASSA AST</p>
+                <p>Color: black, Material: metal</p>
+            </td>
+            <td>
+                <div class="btn-group">
+                    <span class="value1">1</span>
+                    <button name="button" type="button" class="button plus" onclick="plusOne()"><i class="fas fa-plus"></i></button>
+                    <button name="button" type="button" class="button minus" onclick="minusOne()"><i class="fas fa-minus"></i></button>
+                    <button name="button" type="button" class="button multiply" onclick="removeOne()"><i class="fas fa-times"></i></button>
+
+                </div>
+            </td>
+            <td>
+                <span class="position">$120.00</span>
+            </td>
+            <td>
+                <span class="position">$25.00</span>
+            </td>
+            <td>
+                <span class="position"></span>
+            </td>
+            <td>
+                <span class="position"></span>
+            </td>
+        </tr>
+        <tr style="height: 100px;" id="product2">
+            <td>
+                <img src="/Order/image/img3.jpg">
+            </td>
+            <td>
+                <p>MASSA AST</p>
+                <p>Color: black, Material: metal</p>
+            </td>
+            <td>
+                <div class="btn-group">
+                    <span class="value2">2</span>
+                    <button name="button" type="button" class="button plus" onclick="plusTwo()"><i class="fas fa-plus"></i></button>
+                    <button name="button" type="button" class="button minus" onclick="minusTwo()"><i class="fas fa-minus"></i></button>
+                    <button name="button" type="button" class="button multiply"><i class="fas fa-times"></i></button>
+                </div>
+            </td>
+            <td>
+                <span class="position">$7.00</span>
+            </td>
+            <td>
+                <span class="position">--</span>
+            </td>
+            <td>
+                <span class="position"></span>
+            </td>
+            <td>
+                <span class="position"></span>
+            </td>
+        </tr>
+        <tr style="height: 100px;" id="product3">
+            <td>
+                <img src="/Order/image/img2.jpg">
+            </td>
+            <td>
+                <p>MASSA AST</p>
+                <p>Color: black, Material: metal</p>
+            </td>
+            <td>
+                <div class="btn-group">
+                    <span class="value3">1</span>
+                    <button name="button" type="button" class="button plus" onclick="plusThree()"><i class="fas fa-plus"></i></button>
+                    <button name="button" type="button" class="button minus" onclick="minusThree()"><i class="fas fa-minus"></i></button>
+                    <button name="button" type="button" class="button multiply"><i class="fas fa-times"></i></button>
+
+                </div>
+            </td>
+            <td>
+                <span class="position">$120.00</span>
+            </td>
+            <td>
+                <span class="position">$25.00</span>
+            </td>
+            <td>
+                <span class="position"></span>
+            </td>
+            <td>
+                <span class="position"></span>
+            </td>
+        </tr>
+        <tr style="height: 50px;">
+            <td colspan="6">
+                <span style="float: right;">Total Price:</span>
+            </td>
+            <td>
+                <span></span>
+            </td>
+        </tr>
+        <tr style="height: 50px;">
+            <td colspan="6">
+                <span style="float: right;">Total Discount:</span>
+            </td>
+            <td>
+                <span></span>
+            </td>
+        </tr>
+        <tr style="height: 50px;">
+            <td colspan="6">
+                <span style="float: right;">Total Tax:</span>
+            </td>
+            <td>
+                <span></span>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
